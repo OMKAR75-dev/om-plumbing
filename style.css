@@ -1,6 +1,108 @@
-.a-class{
-    color: blue;
-}
-#an-id{
-    color: red;
-}
+      body{
+               background-color: bisque;
+      }
+      *{
+        margin: 0;
+        padding: 0;
+        border-radius:border-box;
+      }
+      .container{
+        height: 100vh;
+        width: 70vw;
+        overflow-x: none;
+        border-radius: border-box;
+      }
+      .navcontainer{
+        width: 100vw;
+        /* background-color:rgb(129, 129, 204); */
+        background: conic-gradient(from 0deg at center, #00ffff 50%, #ff00ff 25%, #ffff00 50%, #000000 75%, #00ffff 100%);
+        background-size: 200% 200%;
+        animation: gradientAnimation 3s alternate infinite;
+
+
+      @keyframes gradientAnimation {
+        0% {
+          background-position: 0% 10%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 10%;
+        }
+      }
+        min-height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      nav{
+        width: 100%;
+      }
+      #navlist{
+         width: 100%;
+            list-style: none;
+            margin-left: 15px;  
+            margin-right: 15px;
+            font-size: 2.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+       #navitems{
+        display: flex;
+        gap: 40px;
+      }
+
+      #navLogo{
+        font-size: 2.8rem;
+        color: orange;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-shadow: 2px 3px 2px red;
+
+      }
+      .nav{
+        display: flex;
+        gap: 200px;
+      }
+      h3{
+        font-size: 15px;
+        color: bisque;
+      }
+      a{
+        text-decoration: none;
+        color: azure;
+      }
+      .footerbox{
+         background: conic-gradient(from 0deg at center, #5f5d5e );
+       min-height: 30px;
+       text-align: center;
+      }
+      .container{
+        width: 100%;
+        height: 70%;
+        margin: auto;
+        border: 1px solid black;
+        background-color:white;
+      }
+      .leftbox video,img{
+        width: 280px;
+        height: 400px;
+        padding: 5px;
+        border: 2px solid black;
+      }
+      .rightbox {
+        margin: 5px;
+        padding-left: 25px;
+
+      }
+      .rightbox > ul > li{
+        font-size: 20px;
+        color: black;
+        text-shadow: 1px 1px 1px red;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .footerbox p{
+          color: azure;
+          font-size: 2rem;
+      }
